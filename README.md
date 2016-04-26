@@ -1,4 +1,4 @@
-Laravel 5.1 A/B Testing
+Laravel 5.2 A/B Testing
 =====================
 
 [![Build Status](http://img.shields.io/travis/rafelsanso/laravel-ab.svg)](https://travis-ci.org/rafelsanso/laravel-ab) [![Coverage Status](http://img.shields.io/coveralls/rafelsanso/laravel-ab.svg)](https://coveralls.io/r/rafelsanso/laravel-ab)
