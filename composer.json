@@ -1,0 +1,28 @@
+{
+    "name": "jenssegers/ab",
+    "description": "A server-side A/B testing tool for Laravel.",
+    "keywords": ["laravel","optimizely","ab","split","testing"],
+    "authors": [
+        {
+            "name": "Jens Segers",
+            "homepage": "http://jenssegers.be"
+        }
+    ],
+    "license" : "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*",
+        "symfony/console": "*",
+        "league/csv": "~6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "2.2.*",
+        "mockery/mockery": "*",
+        "satooshi/php-coveralls": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jenssegers\\AB\\": "src/"
+        }
+    }
+}
