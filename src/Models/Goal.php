@@ -14,7 +14,7 @@ class Goal extends Eloquent {
         parent::__construct($attributes);
 
         // Set the connection based on the config.
-        $this->connection = Config::get('ab::connection');
+        $this->connection = config('ab.connection');
     }
 
     public function scopeActive($query)
