@@ -1,5 +1,5 @@
 {
-    "name": "jamesblackwell/ab",
+    "name": "jamesblackwell/laravel-experiments",
     "description": "A server-side A/B testing tool for Laravel.",
     "keywords": ["laravel","optimizely","ab","split","testing"],
     "authors": [
