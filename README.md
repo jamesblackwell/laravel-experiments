@@ -1,7 +1,6 @@
 Laravel 5.2 A/B Testing
 =====================
 
-[![Build Status](http://img.shields.io/travis/rafelsanso/laravel-ab.svg)](https://travis-ci.org/rafelsanso/laravel-ab) [![Coverage Status](http://img.shields.io/coveralls/rafelsanso/laravel-ab.svg)](https://coveralls.io/r/rafelsanso/laravel-ab)
 
 A server-side A/B testing tool for Laravel, a great free alternative for services such as optimizely. Use A/B testing to figure out which content works, and which doesn't.
 
