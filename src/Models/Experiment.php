@@ -5,8 +5,6 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Experiment extends Eloquent {
 
-    protected $primaryKey = 'name';
-
     protected $fillable = ['name', 'visitors', 'engagement'];
 
     public function __construct(array $attributes = array())
