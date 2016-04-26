@@ -4,10 +4,10 @@
     "keywords": ["laravel","optimizely","ab","split","testing"],
     "authors": [
         {
-            "name": "Jens Segers",
+            "name": "Jens Segers"
         },
         {
-            "name": "James Blackwell",
+            "name": "James Blackwell"
         }
     ],
     "license" : "MIT",
