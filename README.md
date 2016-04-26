@@ -10,14 +10,9 @@ This tool allows you to experiment with different variations of your website and
 Installation
 ------------
 
-Add this repository to composer.json:
+Require the package 
 
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/rafelsanso/laravel-ab"
-        }
-    ],
+   composer require jamesblackwell/laravel-experiments
 
 Add the service provider in `app/config/app.php`:
 
