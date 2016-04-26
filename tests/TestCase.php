@@ -4,12 +4,12 @@ class TestCase extends Orchestra\Testbench\TestCase {
 
     protected function getPackageProviders()
     {
-        return ['Jenssegers\AB\TesterServiceProvider'];
+        return ['Jamesblackwell\AB\TesterServiceProvider'];
     }
 
     protected function getPackageAliases()
     {
-        return ['AB' => 'Jenssegers\AB\Facades\AB'];
+        return ['AB' => 'Jamesblackwell\AB\Facades\AB'];
     }
 
     public function setUp()

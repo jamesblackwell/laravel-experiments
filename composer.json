@@ -1,11 +1,13 @@
 {
-    "name": "jenssegers/ab",
+    "name": "jamesblackwell/ab",
     "description": "A server-side A/B testing tool for Laravel.",
     "keywords": ["laravel","optimizely","ab","split","testing"],
     "authors": [
         {
             "name": "Jens Segers",
-            "homepage": "http://jenssegers.be"
+        },
+        {
+            "name": "James Blackwell",
         }
     ],
     "license" : "MIT",
@@ -22,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jenssegers\\AB\\": "src/"
+            "Jamesblackwell\\AB\\": "src/"
         }
     }
 }

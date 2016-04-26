@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\AB\Session;
+<?php namespace Jamesblackwell\AB\Session;
 
 use Illuminate\Support\Facades\Cookie;
 

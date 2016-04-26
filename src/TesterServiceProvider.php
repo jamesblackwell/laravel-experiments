@@ -1,7 +1,7 @@
-<?php namespace Jenssegers\AB;
+<?php namespace Jamesblackwell\AB;
 
-use Jenssegers\AB\Session\LaravelSession;
-use Jenssegers\AB\Session\CookieSession;
+use Jamesblackwell\AB\Session\LaravelSession;
+use Jamesblackwell\AB\Session\CookieSession;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -22,9 +22,9 @@ class TesterServiceProvider extends ServiceProvider {
     public function boot()
     {
         // Fix for PSR-4
-        //$this->package('jenssegers/ab', 'ab', realpath(__DIR__));
+        //$this->package('jamesblackwell/ab', 'ab', realpath(__DIR__));
         $this->loadViewsFrom(realpath(__DIR__), 'ab');
-        
+
         $this->publishes([
             realpath(__DIR__).'/config/config.php' => config_path('ab.php'),
         ]);
@@ -35,7 +35,7 @@ class TesterServiceProvider extends ServiceProvider {
             $this->app['ab']->track($request);
         });*/
     }
-    
+
     /**
      * Register the application events.
      *
@@ -75,7 +75,7 @@ class TesterServiceProvider extends ServiceProvider {
         // Bind the command objects.
         foreach ($commands as &$command)
         {
-            $class = 'Jenssegers\\AB\\Commands\\' . ucfirst($command) . 'Command';
+            $class = 'Jamesblackwell\\AB\\Commands\\' . ucfirst($command) . 'Command';
             $command = "ab::command.$class";
 
             $this->app->bind($command, function($app) use ($class)

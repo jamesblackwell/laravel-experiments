@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\AB\Models;
+<?php namespace Jamesblackwell\AB\Models;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Eloquent\Model as Eloquent;

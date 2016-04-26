@@ -1,10 +1,10 @@
 <?php
 require_once 'TestCase.php';
 
-use Jenssegers\AB\Tester;
-use Jenssegers\AB\Models\Experiment;
-use Jenssegers\AB\Models\Goal;
-use Jenssegers\AB\Commands\InstallCommand;
+use Jamesblackwell\AB\Tester;
+use Jamesblackwell\AB\Models\Experiment;
+use Jamesblackwell\AB\Models\Goal;
+use Jamesblackwell\AB\Commands\InstallCommand;
 
 class CommandTest extends TestCase {
 

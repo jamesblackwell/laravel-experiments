@@ -21,20 +21,20 @@ Add this repository to composer.json:
 
 Add the service provider in `app/config/app.php`:
 
-    'Jenssegers\AB\TesterServiceProvider',
+    'Jamesblackwell\AB\TesterServiceProvider',
 
 Register the AB alias:
 
-    'AB'           => 'Jenssegers\AB\Facades\AB',
+    'AB'           => 'Jamesblackwell\AB\Facades\AB',
 
 Configuration
 -------------
 
 Publish the included configuration file:
 
-    php artisan config:publish jenssegers/ab
+    php artisan config:publish jamesblackwell/ab
 
-Next, edit the `config/packages/jenssegers/ab/config.php` file. The following configuration options are available:
+Next, edit the `config/packages/jamesblackwell/ab/config.php` file. The following configuration options are available:
 
 ### Database Connection
 

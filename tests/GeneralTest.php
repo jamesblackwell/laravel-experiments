@@ -1,10 +1,10 @@
 <?php
 require_once 'TestCase.php';
 
-use Jenssegers\AB\Tester;
-use Jenssegers\AB\Models\Experiment;
-use Jenssegers\AB\Models\Goal;
-use Jenssegers\AB\Commands\InstallCommand;
+use Jamesblackwell\AB\Tester;
+use Jamesblackwell\AB\Models\Experiment;
+use Jamesblackwell\AB\Models\Goal;
+use Jamesblackwell\AB\Commands\InstallCommand;
 
 class GeneralTest extends TestCase {
 
@@ -30,8 +30,8 @@ class GeneralTest extends TestCase {
     {
         $ab = App::make('ab');
 
-        $this->assertInstanceOf('Jenssegers\AB\Tester', $ab);
-        $this->assertInstanceOf('Jenssegers\AB\Session\SessionInterface', $ab->getSession());
+        $this->assertInstanceOf('Jamesblackwell\AB\Tester', $ab);
+        $this->assertInstanceOf('Jamesblackwell\AB\Session\SessionInterface', $ab->getSession());
     }
 
     public function testTracking()
@@ -39,7 +39,7 @@ class GeneralTest extends TestCase {
         Route::enableFilters();
         $request = Request::instance();
 
-        $ab = Mockery::mock('Jenssegers\AB\Tester');
+        $ab = Mockery::mock('Jamesblackwell\AB\Tester');
         $ab->shouldReceive('track')->with($request)->once();
 
         $this->app['ab'] = $ab;
@@ -68,7 +68,7 @@ class GeneralTest extends TestCase {
 
     public function testExistingExperiment()
     {
-        $session = Mockery::mock('Jenssegers\AB\Session\SessionInterface');
+        $session = Mockery::mock('Jamesblackwell\AB\Session\SessionInterface');
         $session->shouldReceive('get')->with('experiment')->andReturn('a');
 
         $ab = new Tester($session);
@@ -90,7 +90,7 @@ class GeneralTest extends TestCase {
 
     public function testPageview()
     {
-        $session = Mockery::mock('Jenssegers\AB\Session\SessionInterface');
+        $session = Mockery::mock('Jamesblackwell\AB\Session\SessionInterface');
         $session->shouldReceive('get')->with('experiment')->andReturn('a');
         $session->shouldReceive('get')->with('pageview')->andReturn(null)->once();
         $session->shouldReceive('set')->with('pageview', 1)->once();
@@ -103,7 +103,7 @@ class GeneralTest extends TestCase {
 
     public function testInteract()
     {
-        $session = Mockery::mock('Jenssegers\AB\Session\SessionInterface');
+        $session = Mockery::mock('Jamesblackwell\AB\Session\SessionInterface');
         $session->shouldReceive('get')->with('experiment')->andReturn('a');
         $session->shouldReceive('get')->with('interacted')->andReturn(null)->once();
         $session->shouldReceive('set')->with('interacted', 1)->once();
@@ -116,7 +116,7 @@ class GeneralTest extends TestCase {
 
     public function testComplete()
     {
-        $session = Mockery::mock('Jenssegers\AB\Session\SessionInterface');
+        $session = Mockery::mock('Jamesblackwell\AB\Session\SessionInterface');
         $session->shouldReceive('get')->with('experiment')->andReturn('a');
         $session->shouldReceive('get')->with('completed_register')->andReturn(null)->once();
         $session->shouldReceive('set')->with('completed_register', 1)->once();
@@ -203,7 +203,7 @@ class GeneralTest extends TestCase {
 
     public function testSetSession()
     {
-        $session = Mockery::mock('Jenssegers\AB\Session\SessionInterface');
+        $session = Mockery::mock('Jamesblackwell\AB\Session\SessionInterface');
 
         $ab = App::make('ab');
         $ab->setSession($session);

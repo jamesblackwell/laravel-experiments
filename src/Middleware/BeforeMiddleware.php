@@ -1,6 +1,6 @@
-<?php namespace Jenssegers\AB\Middleware;
+<?php namespace Jamesblackwell\AB\Middleware;
 
-use Jenssegers\AB\TesterServiceProvider;
+use Jamesblackwell\AB\TesterServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Foundation\Application;

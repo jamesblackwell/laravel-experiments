@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\AB\Models;
+<?php namespace Jamesblackwell\AB\Models;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Eloquent\Model as Eloquent;
@@ -19,7 +19,7 @@ class Experiment extends Eloquent {
 
     public function goals()
     {
-        return $this->hasMany('Jenssegers\AB\Models\Goal', 'experiment');
+        return $this->hasMany('Jamesblackwell\AB\Models\Goal', 'experiment');
     }
 
     public function scopeActive($query)

@@ -1,8 +1,8 @@
 <?php
 require_once 'TestCase.php';
 
-use Jenssegers\AB\Session\LaravelSession;
-use Jenssegers\AB\Session\CookieSession;
+use Jamesblackwell\AB\Session\LaravelSession;
+use Jamesblackwell\AB\Session\CookieSession;
 
 class SessionTest extends TestCase {
 
