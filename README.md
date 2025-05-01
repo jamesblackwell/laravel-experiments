@@ -1,3 +1,5 @@
+**Abandoned: Use https://github.com/jamesblackwell/laravel-ab-testing**
+
 Laravel 5.2 A/B Testing
 =====================
 
